@@ -1,5 +1,72 @@
 # langchain
 
+## 1.3.0
+
+### Minor Changes
+
+- [#10430](https://github.com/langchain-ai/langchainjs/pull/10430) [`d3d0922`](https://github.com/langchain-ai/langchainjs/commit/d3d0922c24afcd3006fb94dcadd3ebe08fbf2383) Thanks [@christian-bromann](https://github.com/christian-bromann)! - feat(langchain): support for browser tools
+
+### Patch Changes
+
+- [#10591](https://github.com/langchain-ai/langchainjs/pull/10591) [`d7a98cd`](https://github.com/langchain-ai/langchainjs/commit/d7a98cda1a5d9bf9b93b503fc54374f1aaf1a37e) Thanks [@christian-bromann](https://github.com/christian-bromann)! - feat: add @langchain/perplexity standalone provider package
+
+- [#10594](https://github.com/langchain-ai/langchainjs/pull/10594) [`884c2d3`](https://github.com/langchain-ai/langchainjs/commit/884c2d3d1b2c49225d73ddec2235ad174db36f86) Thanks [@christian-bromann](https://github.com/christian-bromann)! - feat(fireworks): extract standalone provider package
+
+- [#10593](https://github.com/langchain-ai/langchainjs/pull/10593) [`0fb6fa4`](https://github.com/langchain-ai/langchainjs/commit/0fb6fa40dcd3a09a4fb91f36c9f2ca869552961e) Thanks [@christian-bromann](https://github.com/christian-bromann)! - feat(together-ai): migrate Together AI into provider package
+
+- [#10654](https://github.com/langchain-ai/langchainjs/pull/10654) [`3bd85c1`](https://github.com/langchain-ai/langchainjs/commit/3bd85c17869e95d5d1a67c5fccc0c4cab2646616) Thanks [@jabiinfante](https://github.com/jabiinfante)! - feat(langchain): add ChatGoogle support to initChatModel
+
+- Updated dependencies [[`d3d0922`](https://github.com/langchain-ai/langchainjs/commit/d3d0922c24afcd3006fb94dcadd3ebe08fbf2383)]:
+  - @langchain/core@1.1.39
+
+## 1.2.39
+
+### Patch Changes
+
+- [#10543](https://github.com/langchain-ai/langchainjs/pull/10543) [`7ed93b8`](https://github.com/langchain-ai/langchainjs/commit/7ed93b8b8a6e9eb0da3e103d74087c692fee2773) Thanks [@pawel-twardziak](https://github.com/pawel-twardziak)! - fix(langchain): allow dynamic tools in wrapModelCall with wrapToolCall
+
+- [#10554](https://github.com/langchain-ai/langchainjs/pull/10554) [`11a295f`](https://github.com/langchain-ai/langchainjs/commit/11a295fdadec3809f40c10492e3fd474e832c468) Thanks [@christian-bromann](https://github.com/christian-bromann)! - fix(langchain): add support for dynamic structured output
+
+- [#10555](https://github.com/langchain-ai/langchainjs/pull/10555) [`f548053`](https://github.com/langchain-ai/langchainjs/commit/f54805305787fa383c3ce1e287daafdb5464a98b) Thanks [@christian-bromann](https://github.com/christian-bromann)! - fix(langchain): bump langgraph dep
+
+- [#10552](https://github.com/langchain-ai/langchainjs/pull/10552) [`589ab9b`](https://github.com/langchain-ai/langchainjs/commit/589ab9be391a5d6c104f34877fc1b3e2a32fa449) Thanks [@christian-bromann](https://github.com/christian-bromann)! - fix(langchain): accept cross-version runnable models in createAgent
+
+- Updated dependencies [[`589ab9b`](https://github.com/langchain-ai/langchainjs/commit/589ab9be391a5d6c104f34877fc1b3e2a32fa449)]:
+  - @langchain/core@1.1.38
+
+## 1.2.38
+
+### Patch Changes
+
+- [#10527](https://github.com/langchain-ai/langchainjs/pull/10527) [`3408008`](https://github.com/langchain-ai/langchainjs/commit/3408008fe59eb8ee72f733349ae85afe5c23eaca) Thanks [@pawel-twardziak](https://github.com/pawel-twardziak)! - fix(langchain): export createAgent and prebuilt middleware from browser entry point
+
+- [#10545](https://github.com/langchain-ai/langchainjs/pull/10545) [`68e0a19`](https://github.com/langchain-ai/langchainjs/commit/68e0a19238be592514b6c01243c41aefaa6a7668) Thanks [@JadenKim-dev](https://github.com/JadenKim-dev)! - fix(langchain): revert zod import in utils.ts to fix v3/v4 interop
+
+- Updated dependencies [[`6933769`](https://github.com/langchain-ai/langchainjs/commit/6933769836fe3cec835588e5f8db9883200865f6), [`50d5f32`](https://github.com/langchain-ai/langchainjs/commit/50d5f32fd30cabebf058b1c13255c1daadde6107), [`5552999`](https://github.com/langchain-ai/langchainjs/commit/555299917c90322e25d7671bad2e20c9b104bad6), [`8331833`](https://github.com/langchain-ai/langchainjs/commit/8331833c93ba907063c9fe28e9f935ed5dfec11c)]:
+  - @langchain/core@1.1.37
+
+## 1.2.37
+
+### Patch Changes
+
+- [#10475](https://github.com/langchain-ai/langchainjs/pull/10475) [`3d35eb1`](https://github.com/langchain-ai/langchainjs/commit/3d35eb112b46b36aea80cebe0147e315d03a1d8e) Thanks [@hntrl](https://github.com/hntrl)! - fix(langchain): add "aws" alias to MODEL_PROVIDER_CONFIG so hub/node auto-detects ChatBedrockConverse from Python-serialized prompts
+
+- [#10258](https://github.com/langchain-ai/langchainjs/pull/10258) [`ae4122f`](https://github.com/langchain-ai/langchainjs/commit/ae4122f9523904423504e5a92c134c625977261d) Thanks [@irfiacre](https://github.com/irfiacre)! - Align Zod Importation For 'libs/langchain/src/agents/nodes/utils.ts'
+
+- Updated dependencies [[`bbbfea1`](https://github.com/langchain-ai/langchainjs/commit/bbbfea185c0777ae06df2b24a1a84f941d499c2a)]:
+  - @langchain/core@1.1.36
+
+## 1.2.36
+
+### Patch Changes
+
+- [#10489](https://github.com/langchain-ai/langchainjs/pull/10489) [`21094f3`](https://github.com/langchain-ai/langchainjs/commit/21094f31d99e30a9c8433072523cb08b8539c1ab) Thanks [@maahir30](https://github.com/maahir30)! - support structured output (providerStrategy) for Google Gemini models in createAgent
+
+- [#10433](https://github.com/langchain-ai/langchainjs/pull/10433) [`7af0b65`](https://github.com/langchain-ai/langchainjs/commit/7af0b65d5ab9a173b528d6a821d269a79fbabdc6) Thanks [@tanushree-sharma](https://github.com/tanushree-sharma)! - feat: Add LangSmith integration metadata to createAgent and initChatModel
+
+- Updated dependencies [[`5dc11b5`](https://github.com/langchain-ai/langchainjs/commit/5dc11b55cccfe35e4dad910a33e904cf49b3088a), [`7af0b65`](https://github.com/langchain-ai/langchainjs/commit/7af0b65d5ab9a173b528d6a821d269a79fbabdc6)]:
+  - @langchain/core@1.1.35
+
 ## 1.2.35
 
 ### Patch Changes

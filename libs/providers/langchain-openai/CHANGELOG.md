@@ -1,5 +1,51 @@
 # @langchain/openai
 
+## 1.4.2
+
+### Patch Changes
+
+- [#10614](https://github.com/langchain-ai/langchainjs/pull/10614) [`d6bf4fc`](https://github.com/langchain-ai/langchainjs/commit/d6bf4fc91b2c2eb931bf3bc7606b1817632bc8c1) Thanks [@colifran](https://github.com/colifran)! - feat(openai): imput placeholder filenames for openai file inputs
+
+- Updated dependencies [[`d3d0922`](https://github.com/langchain-ai/langchainjs/commit/d3d0922c24afcd3006fb94dcadd3ebe08fbf2383)]:
+  - @langchain/core@1.1.39
+
+## 1.4.1
+
+### Patch Changes
+
+- [#10551](https://github.com/langchain-ai/langchainjs/pull/10551) [`9270c48`](https://github.com/langchain-ai/langchainjs/commit/9270c48d7a95db6e7e2570a7e681c94479a673d0) Thanks [@muhammadosama984](https://github.com/muhammadosama984)! - fix(openai): preserve reasoning_content in ChatOpenAICompletions
+
+- Updated dependencies [[`589ab9b`](https://github.com/langchain-ai/langchainjs/commit/589ab9be391a5d6c104f34877fc1b3e2a32fa449)]:
+  - @langchain/core@1.1.38
+
+## 1.4.0
+
+### Minor Changes
+
+- [#10509](https://github.com/langchain-ai/langchainjs/pull/10509) [`5552999`](https://github.com/langchain-ai/langchainjs/commit/555299917c90322e25d7671bad2e20c9b104bad6) Thanks [@hntrl](https://github.com/hntrl)! - feat(openai): add support for phase parameter on Responses API messages
+  - Extract `phase` from message output items and surface it on text content blocks
+  - Support phase in streaming via `response.output_item.added` events
+  - Round-trip phase through both raw provider and standard content paths
+  - Move phase into `extras` dict in the core standard content translator
+
+### Patch Changes
+
+- Updated dependencies [[`6933769`](https://github.com/langchain-ai/langchainjs/commit/6933769836fe3cec835588e5f8db9883200865f6), [`50d5f32`](https://github.com/langchain-ai/langchainjs/commit/50d5f32fd30cabebf058b1c13255c1daadde6107), [`5552999`](https://github.com/langchain-ai/langchainjs/commit/555299917c90322e25d7671bad2e20c9b104bad6), [`8331833`](https://github.com/langchain-ai/langchainjs/commit/8331833c93ba907063c9fe28e9f935ed5dfec11c)]:
+  - @langchain/core@1.1.37
+
+## 1.3.1
+
+### Patch Changes
+
+- [#10481](https://github.com/langchain-ai/langchainjs/pull/10481) [`478652c`](https://github.com/langchain-ai/langchainjs/commit/478652c01cdae0703415febd250b6c2656b36410) Thanks [@hnustwjj](https://github.com/hnustwjj)! - fix(openai): detect DeepSeek context overflow errors as `ContextOverflowError`
+
+  DeepSeek returns `maximum context length` in 400 error messages when the context limit is exceeded. These are now recognized by `wrapOpenAIClientError`, so downstream code (e.g. summarization middleware fallback) can handle them correctly.
+
+- [#10507](https://github.com/langchain-ai/langchainjs/pull/10507) [`52e501b`](https://github.com/langchain-ai/langchainjs/commit/52e501b44ee54ace1889ec9149a3617c4409db51) Thanks [@App-arently](https://github.com/App-arently)! - fix(openai): guard JSON.parse in streaming json_schema when text is empty
+
+- Updated dependencies [[`bbbfea1`](https://github.com/langchain-ai/langchainjs/commit/bbbfea185c0777ae06df2b24a1a84f941d499c2a)]:
+  - @langchain/core@1.1.36
+
 ## 1.3.0
 
 ### Minor Changes
